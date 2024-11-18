@@ -1,0 +1,252 @@
+// Order payloads
+
+[
+  {
+    "category": "Valid Payloads",
+    "data": [
+      // Valid Order (Multiple Items)
+      {
+        "orderDate": "2024-11-15",
+        "customerName": "John Doe",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 2
+          },
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 1
+          }
+        ]
+      },
+
+      // Valid Order (Single Item)
+      {
+        "orderDate": "2024-11-16",
+        "customerName": "Jane Smith",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 5
+          }
+        ]
+      },
+
+      // Valid Order (Different Customer)
+      {
+        "orderDate": "2024-11-17",
+        "customerName": "Michael Johnson",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 2
+          }
+        ]
+      },
+
+      // Valid Order (Multiple Items, Larger Quantities)
+      {
+        "orderDate": "2024-11-18",
+        "customerName": "Sarah Lee",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 10
+          },
+          {
+            "productId": "673af427345e466f4b855ca6",
+            "quantity": 4
+          }
+        ]
+      },
+
+      // Valid Order (Single Product, Large Quantity)
+      {
+        "orderDate": "2024-11-19",
+        "customerName": "David Allen",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 100
+          }
+        ]
+      },
+
+      // Valid Order (Order with Short Customer Name)
+      {
+        "orderDate": "2024-11-20",
+        "customerName": "Tom",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 3
+          }
+        ]
+      },
+
+      // Valid Order (Another Customer, Multiple Items)
+      {
+        "orderDate": "2024-11-21",
+        "customerName": "Alice Green",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 1
+          },
+          {
+            "productId": "673af427345e466f4b855ca6",
+            "quantity": 2
+          }
+        ]
+      },
+
+      // Valid Order (Order with Zero Items)
+      {
+        "orderDate": "2024-11-22",
+        "customerName": "Rick Sanchez",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 1
+          }
+        ]
+      },
+
+      // Valid Order (Customer with Long Name)
+      {
+        "orderDate": "2024-11-23",
+        "customerName": "Christopher Nolan",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 2
+          }
+        ]
+      },
+
+      // Valid Order (Multiple Products)
+      {
+        "orderDate": "2024-11-24",
+        "customerName": "Olivia Harris",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 1
+          },
+          {
+            "productId": "673af427345e466f4b855ca6",
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Invalid Payloads",
+    "data": [
+      // Invalid Order (Missing OrderDate)
+      {
+        "customerName": "Alice Johnson",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 2
+          }
+        ]
+      },
+
+      // Invalid Order (Missing CustomerName)
+      {
+        "orderDate": "2024-11-15",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 1
+          }
+        ]
+      },
+
+      // Invalid Order (Missing OrderItems)
+      {
+        "orderDate": "2024-11-15",
+        "customerName": "Bob Carter"
+      },
+
+      // Invalid Order (Empty OrderItems)
+      {
+        "orderDate": "2024-11-16",
+        "customerName": "Charlie Brown",
+        "orderItems": []
+      },
+
+      // Invalid Order (Empty CustomerName)
+      {
+        "orderDate": "2024-11-17",
+        "customerName": "",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 1
+          }
+        ]
+      },
+
+      // Invalid Order (Negative Quantity)
+      {
+        "orderDate": "2024-11-18",
+        "customerName": "Sarah Lee",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": -3
+          }
+        ]
+      },
+
+      // Invalid Order (Zero Quantity)
+      {
+        "orderDate": "2024-11-19",
+        "customerName": "Tom Hanks",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 0
+          }
+        ]
+      },
+
+      // Invalid Order (Invalid ProductId)
+      {
+        "orderDate": "2024-11-20",
+        "customerName": "Emily Davis",
+        "orderItems": [
+          {
+            "productId": "-673af427345e466f4b855ca5",
+            "quantity": 1
+          }
+        ]
+      },
+
+      // Invalid Order (Invalid Date Format)
+      {
+        "orderDate": "2024-11-32",
+        "customerName": "John Wick",
+        "orderItems": [
+          {
+            "productId": "673af427345e466f4b855ca5",
+            "quantity": 2
+          }
+        ]
+      },
+
+      // Invalid Order (Missing ProductId in OrderItem)
+      {
+        "orderDate": "2024-11-21",
+        "customerName": "Olivia Green",
+        "orderItems": [
+          { "quantity": 3 }
+        ]
+      }
+    ]
+  }
+]

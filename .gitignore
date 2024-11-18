@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/DotnetMongo.Application/bin/Debug/net8.0
+/DotnetMongo.Application/obj
+/DotnetMongo.Domain/bin/Debug/net8.0
+/DotnetMongo.Domain/obj
+/DotnetMongo.Infrastructure/bin/Debug/net8.0
+/DotnetMongo.Infrastructure/obj
+/DotnetMongo.Web/bin/Debug/net8.0
+/DotnetMongo.Web/obj

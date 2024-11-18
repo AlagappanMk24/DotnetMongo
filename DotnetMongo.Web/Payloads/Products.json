@@ -1,0 +1,64 @@
+// Product payloads
+
+[
+  {
+    "category": "Valid Payloads",
+    "data": [
+      {
+        "name": "Laptop",
+        "description": "A high-performance laptop for gaming and work.",
+        "price": 999.99
+      },
+      {
+        "name": "Smartphone",
+        "description": "Latest model with advanced camera and features.",
+        "price": 699.50
+      },
+      {
+        "name": "Headphones",
+        "description": "Noise-cancelling headphones for immersive sound.",
+        "price": 150.00
+      },
+      {
+        "name": "Desk Chair",
+        "description": "Ergonomic desk chair for comfortable seating.",
+        "price": 250.00
+      },
+      {
+        "name": "Mouse",
+        "description": "Wireless mouse with ergonomic design.",
+        "price": 29.99
+      }
+    ]
+  },
+  {
+    "category": "Invalid Payloads",
+    "data": [
+      {
+        "name": "TV",
+        "description": "A 4K Ultra HD television.",
+        "price": 499.99
+      },
+      {
+        "name": "A very long product name that exceeds one hundred characters to test the string length validation",
+        "description": "Product name is too long.",
+        "price": 200.00
+      },
+      {
+        "name": "Camera",
+        "description": "Digital camera with 20MP resolution.",
+        "price": -50.00
+      },
+      {
+        "name": "Tripod",
+        "description": "Lightweight tripod for cameras.",
+        "price": 0.00
+      },
+      {
+        "name": "Speaker",
+        "description": "A long description that exceeds the allowed 500 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 199.99
+      }
+    ]
+  }
+]
